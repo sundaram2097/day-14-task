@@ -1,0 +1,111 @@
+html {
+    background-image: linear-gradient(to top, #a3bded 0%, #6991c7 100%);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+.heading{
+   text-align: center;
+   font-size: 15px;
+}
+
+@media (max-width: 768px) {
+    #calculator {
+        width: 100%;
+    }
+}
+
+#calculator{
+	width: 350px;
+	height: 550px;
+	background-color: lightgray;
+	margin: 0 auto;
+	top: 60px;
+	position: relative;
+	border-radius: 15px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(71, 40, 40, 0.19);
+}
+
+#result-window{
+	height: 120px;
+}
+
+#history{
+	text-align: right;
+	height: 0px;
+	margin: 0 20px;
+	padding-top: 20px;
+	font-size: 15px;
+	color: #777777;
+}
+
+#output{
+    padding: 30px 0px
+}
+
+#result{
+    text-align: right;
+    font-size: 40px;
+    margin: 10px 20px;
+    width: 285px;
+    height: 20px;
+    padding: 10px;
+}
+
+#keyboard{
+	height: 400px;
+    padding: 15px;
+}
+
+.operator, .number, .dot{
+	width: 50px;
+	height: 50px;
+	margin: 15px;
+	float: left;
+	border-radius: 50%;
+	border-width: 0;
+	font-weight: bold;
+	font-size: 15px;
+    background-color: orange;
+}
+.number, .dot{
+	background-color:black;
+    color: white;
+}
+
+#equal{
+    width: 50px;
+	height: 50px;
+	margin: 15px;
+	float: left;
+	border-radius: 50%;
+	border-width: 0;
+	font-weight: bold;
+	font-size: 15px;
+    background-color: rgb(1, 190, 1);
+}
+
+#clear{
+    background-color: red;
+}
+
+#backspace{
+    background-color: rgb(250, 180, 10);
+}
+
+.number, .operator,.dot, #equal{
+	cursor: pointer;
+}
+
+.operator:active, .number:active, .dot:active, #equal:active{
+	font-size: 13px;
+}
+
+.operator:focus, .number:focus, #equal:focus{
+	outline: 0;
+}
+
+
+  
